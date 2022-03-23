@@ -1,4 +1,5 @@
 #/bin/bash/
+#file.io
 echo 'Enter THE FULL PATH of the file'
 read path
 url=$(curl -F "file=@$path" https://file.io| jq -r '.link')
