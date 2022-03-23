@@ -1,4 +1,5 @@
 #/bin/bash/
+#Anonfiles.com
 echo 'Enter THE FULL PATH of the file'
 read path
 url=$(curl -F "file=@$path" https://api.anonfiles.com/upload | jq -r '.data.file.url.short')
